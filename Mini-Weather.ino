@@ -9,8 +9,6 @@ Mini WiFi Weather Station
 
 Spark Core Weather station, Sends Humidity and Temperature data to wunderground.com for logging/analysis
 
-Pieced together by Dan Fein
-
 Notes:
 This project assumes battery power and to save power it will deep sleep between sends.
 
@@ -21,6 +19,8 @@ Sign up at http://www.wunderground.com/personal-weather-station/signup.asp
 IF sending timestamped data:
 Wunderground wants UTC Zulu, not local time, if your RTC is local, offset it in code.
 Wunderground Upload guidelines: http://wiki.wunderground.com/index.php/PWS_-_Upload_Protocol
+
+Pieced together by Dan Fein http://github.com/danfein
 
 ****************************************************************/
 
