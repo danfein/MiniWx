@@ -54,8 +54,8 @@ void setup()
 	Serial.begin(9600);
 	RGB.control(true);  // Turn down for what? The status light is crazy bright = wasted mAh battery.
 	RGB.brightness(10); // This sets the RGB LED brightness : 0-256
-    RGB.control(false); // release the LED to the system
-    dht.begin();		// Startup the sensor
+    	RGB.control(false); // release the LED to the system
+    	dht.begin();		// Startup the sensor
     
 	Serial.println("---------------");
 }
