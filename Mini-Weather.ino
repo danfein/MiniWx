@@ -101,6 +101,11 @@ void loop(){
         client.print(humidity);
         //client.print("&action=updateraw");//If using Standard update server
         client.print("&softwaretype=SparkCore%20version1&action=updateraw&realtime=1&rtfreq=5");//If using Rapid Fire server
+        client.print(" HTTP/1.0\r\n");
+  		client.print("Accept: text/html\r\n");
+  		client.print("Host: ");
+  		client.print(SERVER);
+  		client.print("\r\n\r\n");
         client.println();
         Serial.println("Upload complete");
         } 
